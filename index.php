@@ -40,6 +40,15 @@
 			echo "<br>" .$num ;
 		}
 
+		$producto = array("Coca cola"=> 20,"tostado" => 30,"pizza" => 40);
+
+		echo "<br>".$producto["tostado"]."<br>";
+		$arraynuevo["apellido"] = "Aguirre";
+		$producto[2]= "NUMERO 2";
+		var_dump($producto);
+		echo "<br>";
+		var_dump($arraynuevo);
+
 	?>
 
 
