@@ -34,6 +34,7 @@
 
 		$arraynuevo[] = 66;
 		$arraynuevo[2] = 666;
+		 // USO DE FOREACH
 		foreach ($arraynuevo as $num) 
 
 		{
@@ -48,6 +49,23 @@
 		var_dump($producto);
 		echo "<br>";
 		var_dump($arraynuevo);
+
+											// USO OBJETOS Y ATRIBUTOS
+
+		$miObjeto = new stdclass();
+		$miObjeto->nombre = "Jonathan A";
+		ECHO "<br>";
+		var_dump($miObjeto);
+		$miObjeto->producto = $producto;
+		
+		$arrayObjeto = array();
+		$arrayObjeto["nombre"] = "Jonathan";
+		$arrayObjeto["apellido"] = "Aguirre";
+		$arrayObjeto["producto"] = $producto;
+		
+		echo "<br>";
+		var_dump($miObjeto);
+
 
 	?>
 
