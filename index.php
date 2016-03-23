@@ -62,11 +62,52 @@
 		$arrayObjeto["nombre"] = "Jonathan";
 		$arrayObjeto["apellido"] = "Aguirre";
 		$arrayObjeto["producto"] = $producto;
-		
+		var_dump($arrayObjeto);
 		echo "<br>";
 		var_dump($miObjeto);
 
+//CREACION DE CLAE
+ class Alumno{
+// ATRIVUTOS DE LA CLASE
+public $nombre;
+public $apellido;
 
+
+
+// NUEVO OBJETO DE LA CLASE
+
+// METODO CONSTURCTOR
+	function __construct(){
+
+
+	}
+
+	//NUEVO METODO
+	public function Mostrar()
+	 {
+	 	echo "<br>";
+
+	 	echo $this->nombre; 
+	 	echo "<br>";
+	 	echo $this->apellido;
+	 }
+
+	 public static function MostrarAlumno($unalumno){
+
+	 	echo $unalumno->Mostrar();
+	 }
+
+
+
+}
+
+//CREACION DE OBJETO DE CLASE Y USO DE SUS ATRIVUTOS Y METODOS
+
+$nuevoAlumno = new Alumno();
+$nuevoAlumno->nombre = "Jonathan";
+$nuevoAlumno->apellido = "Aguirre";
+//$nuevoAlumno->Mostrar();
+$nuevoAlumno::MostrarAlumno($nuevoAlumno);
 	?>
 
 
