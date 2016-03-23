@@ -7,14 +7,16 @@
 	
 	<?php
 
+	require_once "Alumno.php";
+	include_once "Mascota.php";
 
+/*
 	echo "<h1> Jonathan  </h1>";    //DENTRO DE LOS COMENTARIOS PHP SE PUEDE ESCRIBIR HTML
 			$nombre = "Jonathan";
 	  
 	   echo $nombre;          //LAS VARIABLES EN PHP NO SON DE NINGUN TIPO. TODAS LAS VARIABLES LLEVAN SIGNO PESOS 
 		
 		echo "<h1>" .$nombre. "</h1>"; // CONCATENO HTML CON PHP
-
 		$numero = 33;
 
 
@@ -29,7 +31,7 @@
 
 			print("es mayor de edad");
 		}
-
+*/
 		$arraynuevo = array(1,2,3,5);
 
 		$arraynuevo[] = 66;
@@ -67,6 +69,7 @@
 		var_dump($miObjeto);
 
 //CREACION DE CLAE
+		/*
  class Alumno{
 // ATRIVUTOS DE LA CLASE
 public $nombre;
@@ -100,13 +103,15 @@ public $apellido;
 
 
 }
-
+*/
 //CREACION DE OBJETO DE CLASE Y USO DE SUS ATRIVUTOS Y METODOS
 
 $nuevoAlumno = new Alumno();
 $nuevoAlumno->nombre = "Jonathan";
 $nuevoAlumno->apellido = "Aguirre";
-//$nuevoAlumno->Mostrar();
+//$nuevoAlumno->Mostrar(); COMENTO PARA USAR EL ESTATICO DE ABAJO
+
+// USO DE METODO ESTATICO
 $nuevoAlumno::MostrarAlumno($nuevoAlumno);
 	?>
 
